@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
   "skill_name": "invoice-reimbursement",
-  "version": "1.0.0",
-  "tag": "v1.0.0",
+  "version": "1.0.1",
+  "tag": "v1.0.1",
   "payload_root": "skill/invoice-reimbursement",
   "payload_files": [
     {
       "path": "SKILL.md",
-      "sha256": "5C8658BC0A2A78F64131416787E57B38AF24A67911264CA1AC2D47A3E773B6AF",
+      "sha256": "36CABA2A7C43A4784C415D066573B75ECD9873495B897459C94688F3C966BDC6",
       "size": 4630
     },
     {
       "path": "SKILL_ZH.md",
-      "sha256": "38C7215BA5071683AE75DE13027450C2474E984B44FABA09FD76BF9767395582",
+      "sha256": "6CDA76B2D82F62DC7E659CE41CEA142D515F4D079C4B4967F74CB9091B1283B5",
       "size": 3887
     },
     {
@@ -46,7 +46,7 @@
       "size": 8011
     }
   ],
-  "payload_aggregate_sha256": "D6042AC7E54D5B2CADBB5264A3C5DBC4920A42C947C6146F8E7E1D685DE3C0EE",
+  "payload_aggregate_sha256": "47B3EE5EF9781CC9BCEB3781FEBB0EE081881DB3877A977E89BC1FF5743DF34F",
   "repository_files": [
     {
       "path": ".gitattributes",
@@ -59,13 +59,23 @@
       "size": 36
     },
     {
+      "path": "README.md",
+      "sha256": "5108DF94C8F5517807BAA6011DFC005330AFC7F8A33FD3D4A654A4AC34CD1297",
+      "size": 3689
+    },
+    {
+      "path": "README_ZH.md",
+      "sha256": "6C5761E78C6086EF9361C3E4722F49FC5407672D5B7F4B2C55D590B14429DFD1",
+      "size": 3461
+    },
+    {
       "path": "skill/invoice-reimbursement/SKILL.md",
-      "sha256": "5C8658BC0A2A78F64131416787E57B38AF24A67911264CA1AC2D47A3E773B6AF",
+      "sha256": "36CABA2A7C43A4784C415D066573B75ECD9873495B897459C94688F3C966BDC6",
       "size": 4630
     },
     {
       "path": "skill/invoice-reimbursement/SKILL_ZH.md",
-      "sha256": "38C7215BA5071683AE75DE13027450C2474E984B44FABA09FD76BF9767395582",
+      "sha256": "6CDA76B2D82F62DC7E659CE41CEA142D515F4D079C4B4967F74CB9091B1283B5",
       "size": 3887
     },
     {
@@ -105,14 +115,14 @@
     },
     {
       "path": "tests/test_template_asset.py",
-      "sha256": "4DABFE42581336BF7184FFDAB191FD3021453D3B8F19770A1817C00A8E7477BF",
-      "size": 3534
+      "sha256": "1472CF9A711A148F683A7B3BFE82AD0C53C5F83D2C9CBA58B50BA3F1E832726F",
+      "size": 3612
     },
     {
       "path": "tools/release.py",
-      "sha256": "C6C98B5B919B1D80D958BDCE9DEC4E9507C463AED42E86172AC46EB9631598A5",
-      "size": 15149
+      "sha256": "DD874689DEF9CE9EF07D5C380808A8B3F1BB71304B020C27AFB95F1C7982D04C",
+      "size": 15878
     }
   ],
-  "released_content_aggregate_sha256": "26260CDC05A7213E9935BC81417586A48547CCD1AE589808B4852B32158201DA"
+  "released_content_aggregate_sha256": "5714171046EB1B54A65397F8E04CD6E980D82BF67BBB1C91F419A4C9342FB11C"
 }

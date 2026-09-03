@@ -165,6 +165,20 @@ def verify_translation(manifest: dict) -> None:
     version_match = re.search(r'^\s*version:\s*["\']?([^"\'\r\n]+)', canonical_text, re.MULTILINE)
     if not version_match or version_match.group(1).strip() != version:
         raise ValueError("SKILL.md version differs from manifest")
+
+    readme = REPO_ROOT / "README.md"
+    readme_mirror = REPO_ROOT / "README_ZH.md"
+    if readme.exists() != readme_mirror.exists():
+        raise ValueError("README.md and README_ZH.md must exist together")
+    if readme.exists():
+        readme_mirror_text = readme_mirror.read_text(encoding="utf-8")
+        if "规范源文件：`README.md`" not in readme_mirror_text:
+            raise ValueError("README_ZH.md source filename is missing")
+        if f"规范源版本：`{version}`" not in readme_mirror_text:
+            raise ValueError("README_ZH.md source version is stale")
+        if f"规范源 SHA-256：`{file_hash(readme)}`" not in readme_mirror_text:
+            raise ValueError("README_ZH.md source hash is stale")
+
     policy = (PAYLOAD_ROOT / "agents" / "openai.yaml").read_text(encoding="utf-8")
     if not re.search(r"allow_implicit_invocation:\s*false\b", policy):
         raise ValueError("Candidate must be explicit-only")
