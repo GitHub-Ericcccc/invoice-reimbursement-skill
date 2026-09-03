@@ -2,7 +2,7 @@
 name: invoice-reimbursement
 description: Incrementally obtain, identify, rename, and file invoice PDFs, then safely append new invoices to an existing reimbursement Excel template. Use when the user asks to organize reimbursement invoices, process newly added invoices, or update a reimbursement workbook from invoice links, attachments, QR codes, or a project folder. Do not use for tax-law advice, invoice authenticity conclusions, or bookkeeping without source invoices.
 metadata:
-  version: "1.0.0-rc.2"
+  version: "1.0.0"
 ---
 
 # Invoice Reimbursement
