@@ -5,9 +5,11 @@
 1. Resolve the exact invoice directory before any write. This is the directory that contains the managed reimbursement invoice PDFs.
 2. Inventory top-level PDFs and Excel workbooks. Do not scan unrelated directories.
 3. The persistent summary target is always `<invoice-directory>/报销表.xlsx`. Its filename and directory are not configurable.
-4. If the user identifies an authoritative workbook under another name or in another directory during bootstrap, use it only as the source for creating `报销表.xlsx` in the invoice directory. Do not leave the resulting summary elsewhere.
-5. Inspect sheet names, headers, used range, existing rows, formulas, styles, and repeated wording. The current user-edited file is authoritative even if it differs from an older template.
-6. Load project-local configuration/state when present. Run `invoice_state.py scan` before deciding which PDFs are new.
+4. When `报销表.xlsx` does not exist, use an unambiguous user-identified workbook as the bootstrap source. If none exists, copy `assets/报销表模板.xlsx` to the invoice directory and name the copy `报销表.xlsx`.
+5. The bundled asset contains exactly three visibly marked sample rows. Before the first real insertion, clear `A2:H4` while preserving formats only when all three rows still have claimant `示例人员` and notes beginning `【样例，请替换或删除】`. If any marker changed, treat the workbook as user-edited and do not clear automatically.
+6. Never copy the bundled asset over an existing `报销表.xlsx`, and never leave a resulting summary outside the invoice directory.
+7. Inspect sheet names, headers, used range, existing rows, formulas, styles, and repeated wording. The current user-edited file is authoritative even if it differs from an older template.
+8. Load project-local configuration/state when present. Run `invoice_state.py scan` before deciding which PDFs are new.
 
 ## 2. 获取发票
 

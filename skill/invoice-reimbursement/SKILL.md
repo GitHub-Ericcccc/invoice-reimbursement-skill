@@ -2,7 +2,7 @@
 name: invoice-reimbursement
 description: Incrementally obtain, identify, rename, and file invoice PDFs, then safely append new invoices to an existing reimbursement Excel template. Use when the user asks to organize reimbursement invoices, process newly added invoices, or update a reimbursement workbook from invoice links, attachments, QR codes, or a project folder. Do not use for tax-law advice, invoice authenticity conclusions, or bookkeeping without source invoices.
 metadata:
-  version: "1.0.0-rc.1"
+  version: "1.0.0-rc.2"
 ---
 
 # Invoice Reimbursement
@@ -17,6 +17,8 @@ Turn a user-authorized set of invoice sources into a checked, incremental reimbu
 - Use the tax-inclusive invoice total for reimbursement unless the workbook or user explicitly requires another basis.
 - The reimbursement summary must be named exactly `报销表.xlsx` and must be stored in the same directory as the managed invoice PDFs. Never place the final workbook in an operating-system temporary directory, a generic `outputs` directory, or any other directory.
 - Never overwrite an invoice. Update `报销表.xlsx` only through a validated candidate and recoverable replacement performed inside that same invoice directory.
+- `assets/报销表模板.xlsx` is a sanitized bootstrap asset, not a project authority. Copy it to the invoice directory as `报销表.xlsx` only when no authoritative workbook exists.
+- Never overwrite an existing `报销表.xlsx` with the bundled asset. On first real write, clear the three bundled sample rows only when all sample markers remain exact; otherwise preserve the user-edited rows and resolve the ambiguity.
 - Preserve the current workbook's sheets, headers, formulas, wording, formatting, and intentional deletions. Do not restore an older sheet or phrase from a prior template.
 - Keep claimant names, client/project names, paths, credentials, invoice numbers, and local mappings in project-local configuration/state; never copy them into this Skill.
 
