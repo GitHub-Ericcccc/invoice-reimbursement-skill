@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "skill_name": "invoice-reimbursement",
+  "version": "1.0.0-rc.1",
+  "tag": "v1.0.0-rc.1",
+  "payload_root": "skill/invoice-reimbursement",
+  "payload_files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "F94F12CD04ECA099B4F6FE02D95ACE5089E26E0274262131D7E1ECB40A6C836F",
+      "size": 4211
+    },
+    {
+      "path": "SKILL_ZH.md",
+      "sha256": "8C2844B3F6C929B82D867922ACDEBEA8F2AFCA725787419D6F3FBBDF6940E044",
+      "size": 3468
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "E783D4068B3D001B21F4917E4EC115FADB232432A8DDE4280E9FEA1516456676",
+      "size": 338
+    },
+    {
+      "path": "references/blueprint.md",
+      "sha256": "1248D6F1582439FC7FAE2564B17003E372F5B346581BBF28E2E1CE3107EB63C1",
+      "size": 3075
+    },
+    {
+      "path": "references/project-configuration.md",
+      "sha256": "49DDE0CFB5D40907F9A2A28FB7E69C2660E1A282DF4B80DF39CDB5AEC6DF4DD7",
+      "size": 1471
+    },
+    {
+      "path": "references/workflow.md",
+      "sha256": "B208A222FB787070FC4D0CD76BD1FA49165637095EB7DD2EC3C032DA1081CF48",
+      "size": 6121
+    },
+    {
+      "path": "scripts/invoice_state.py",
+      "sha256": "26297232FA0BEBC7CFF7CA370EAF8834BE0765E49B905F2138546147FD7D5A3D",
+      "size": 8011
+    }
+  ],
+  "payload_aggregate_sha256": "7BFDB6FB138D4D4C7EB81A582BC346546D43E9D723795B9DF25AFD0FE6266C2D",
+  "repository_files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "FA06FDD3E0A7AB7B7F5FAC7D8F589F01B8B660458D2495CE167AB2AECB59AD15",
+      "size": 16
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "7B50457F8D45B05DA9BB6FDC026BDC87AC1112ED6C1808474CCD831A578C6C73",
+      "size": 33
+    },
+    {
+      "path": "skill/invoice-reimbursement/SKILL.md",
+      "sha256": "F94F12CD04ECA099B4F6FE02D95ACE5089E26E0274262131D7E1ECB40A6C836F",
+      "size": 4211
+    },
+    {
+      "path": "skill/invoice-reimbursement/SKILL_ZH.md",
+      "sha256": "8C2844B3F6C929B82D867922ACDEBEA8F2AFCA725787419D6F3FBBDF6940E044",
+      "size": 3468
+    },
+    {
+      "path": "skill/invoice-reimbursement/agents/openai.yaml",
+      "sha256": "E783D4068B3D001B21F4917E4EC115FADB232432A8DDE4280E9FEA1516456676",
+      "size": 338
+    },
+    {
+      "path": "skill/invoice-reimbursement/references/blueprint.md",
+      "sha256": "1248D6F1582439FC7FAE2564B17003E372F5B346581BBF28E2E1CE3107EB63C1",
+      "size": 3075
+    },
+    {
+      "path": "skill/invoice-reimbursement/references/project-configuration.md",
+      "sha256": "49DDE0CFB5D40907F9A2A28FB7E69C2660E1A282DF4B80DF39CDB5AEC6DF4DD7",
+      "size": 1471
+    },
+    {
+      "path": "skill/invoice-reimbursement/references/workflow.md",
+      "sha256": "B208A222FB787070FC4D0CD76BD1FA49165637095EB7DD2EC3C032DA1081CF48",
+      "size": 6121
+    },
+    {
+      "path": "skill/invoice-reimbursement/scripts/invoice_state.py",
+      "sha256": "26297232FA0BEBC7CFF7CA370EAF8834BE0765E49B905F2138546147FD7D5A3D",
+      "size": 8011
+    },
+    {
+      "path": "tests/test_invoice_state.py",
+      "sha256": "E48817D0F5046961F9A03C27AB56B823F1B7C31FC51C69CE3D502B7A555754EA",
+      "size": 3978
+    },
+    {
+      "path": "tools/release.py",
+      "sha256": "C6C98B5B919B1D80D958BDCE9DEC4E9507C463AED42E86172AC46EB9631598A5",
+      "size": 15149
+    }
+  ],
+  "released_content_aggregate_sha256": "D37000F4ED79B227DF6D542CC3DA3AE799E66FDF1D60170CCDBD3FBC1AF1A73D"
+}
